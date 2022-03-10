@@ -12,7 +12,7 @@
 		611A450E4FC32351FF487A0C51ADD440 /* UIOpen-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5445149CBDB471E2374D8395C34E949A /* UIOpen-dummy.m */; };
 		9F8FE1ADF94FC1DBA1B0C7C3EAE09B4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		DC16C838A591E05CF9FBCB764B606F7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E480DD0B27DA3E7600F4F1E0 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E480DD0A27DA3E7600F4F1E0 /* View.swift */; };
+		E4497E6627DA43040018C906 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4497E6527DA43040018C906 /* View.swift */; };
 		EBCEA9D5CD6B824CCAE592B4B6F7AB75 /* UIOpen-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5A8564FA5643A0A4AC84886C2DCEBC /* UIOpen-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -45,10 +45,10 @@
 		BF3CA60A956FF4942916E4CF45966096 /* Pods-UIOpen_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UIOpen_Tests-umbrella.h"; sourceTree = "<group>"; };
 		C51E58546579020281F9E71B9A9E010C /* Pods-UIOpen_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIOpen_Tests-dummy.m"; sourceTree = "<group>"; };
 		DC5A8564FA5643A0A4AC84886C2DCEBC /* UIOpen-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIOpen-umbrella.h"; sourceTree = "<group>"; };
-		E480DD0A27DA3E7600F4F1E0 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		E4497E6527DA43040018C906 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = View.swift; path = UIOpen/Classes/View.swift; sourceTree = "<group>"; };
 		E5522422FED12154ACAE526D0728167C /* UIOpen-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UIOpen-Info.plist"; sourceTree = "<group>"; };
 		E9717FFFAAEA478D7EC8B2B82BE4FD02 /* UIOpen.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = UIOpen.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		EAA62DFBB983BFE3AF91CF76ADD9AAEE /* UIOpen */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIOpen; path = UIOpen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA62DFBB983BFE3AF91CF76ADD9AAEE /* UIOpen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIOpen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99CC209CB11139CFAAF7CF2E8345179 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FB19F196A6CA8CDB6B35B2F9EF61F861 /* Pods-UIOpen_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UIOpen_Tests-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				AA511DBCED11542CE6CC6AAA5BAAFE50 /* Pods_UIOpen_Tests.framework */,
-				EAA62DFBB983BFE3AF91CF76ADD9AAEE /* UIOpen */,
+				EAA62DFBB983BFE3AF91CF76ADD9AAEE /* UIOpen.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,7 +111,7 @@
 		AFCB7B517003F20260AF83415073A7B8 /* UIOpen */ = {
 			isa = PBXGroup;
 			children = (
-				E480DD0A27DA3E7600F4F1E0 /* View.swift */,
+				E4497E6527DA43040018C906 /* View.swift */,
 				975A2CDD1481FDDCB83FDCD6420B8FF7 /* Pod */,
 				BBE89702DB34334190FD94376E2B07DD /* Support Files */,
 			);
@@ -215,7 +215,7 @@
 			);
 			name = UIOpen;
 			productName = UIOpen;
-			productReference = EAA62DFBB983BFE3AF91CF76ADD9AAEE /* UIOpen */;
+			productReference = EAA62DFBB983BFE3AF91CF76ADD9AAEE /* UIOpen.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D6D05769EEBABB4759F5C6A4F4EB64BE /* Pods-UIOpen_Tests */ = {
@@ -244,7 +244,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					D6D05769EEBABB4759F5C6A4F4EB64BE = {
 						LastSwiftMigration = 1320;
@@ -300,7 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E480DD0B27DA3E7600F4F1E0 /* View.swift in Sources */,
+				E4497E6627DA43040018C906 /* View.swift in Sources */,
 				4A567513704C3A975538DFCF509C20A0 /* Pods-UIOpen_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,7 +333,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-UIOpen_Tests/Pods-UIOpen_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UIOpen_Tests/Pods-UIOpen_Tests.modulemap";
@@ -368,7 +368,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-UIOpen_Tests/Pods-UIOpen_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UIOpen_Tests/Pods-UIOpen_Tests.modulemap";
@@ -437,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -501,7 +501,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -529,7 +529,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/UIOpen/UIOpen-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/UIOpen/UIOpen-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/UIOpen/UIOpen.modulemap";
 				PRODUCT_MODULE_NAME = UIOpen;
@@ -559,7 +559,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/UIOpen/UIOpen-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/UIOpen/UIOpen-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/UIOpen/UIOpen.modulemap";
 				PRODUCT_MODULE_NAME = UIOpen;
