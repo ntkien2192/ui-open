@@ -12,7 +12,7 @@ extension UITextField {
         next?.touchesBegan(touches, with: event)
         if let touch = touches.first {
             let position = touch.location(in: self)
-            Element.logs(self, point: position, type: .touchesBegan)
+            UIOpen.logs(self, point: position, type: .touchesBegan)
         }
     }
     
@@ -20,7 +20,7 @@ extension UITextField {
         next?.touchesBegan(touches, with: event)
         if let touch = touches.first {
             let position = touch.location(in: self)
-            Element.logs(self, point: position, type: .touchesMoved)
+            UIOpen.logs(self, point: position, type: .touchesMoved)
         }
     }
     
@@ -28,7 +28,7 @@ extension UITextField {
         next?.touchesBegan(touches, with: event)
         if let touch = touches.first {
             let position = touch.location(in: self)
-            Element.logs(self, point: position, type: .touchesEnded)
+            UIOpen.logs(self, point: position, type: .touchesEnded)
         }
     }
     
@@ -36,7 +36,7 @@ extension UITextField {
         next?.touchesBegan(touches, with: event)
         if let touch = touches.first {
             let position = touch.location(in: self)
-            Element.logs(self, point: position, type: .touchesCancelled)
+            UIOpen.logs(self, point: position, type: .touchesCancelled)
         }
     }
 }
