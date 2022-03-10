@@ -1,0 +1,16 @@
+PODS:
+  - UIOpen (0.1.0)
+
+DEPENDENCIES:
+  - UIOpen (from `../`)
+
+EXTERNAL SOURCES:
+  UIOpen:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  UIOpen: 1a93e24e0eec6e7212d458a1803605e1dcc453d7
+
+PODFILE CHECKSUM: 92ba0c60be99bd75238b6e4cc64501eb589088e6
+
+COCOAPODS: 1.11.2

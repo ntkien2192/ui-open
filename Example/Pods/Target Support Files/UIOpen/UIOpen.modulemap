@@ -1,0 +1,6 @@
+framework module UIOpen {
+  umbrella header "UIOpen-umbrella.h"
+
+  export *
+  module * { export * }
+}

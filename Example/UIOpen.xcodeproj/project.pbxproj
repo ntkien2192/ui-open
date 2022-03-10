@@ -12,15 +12,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		020FDC6EA0CE63C32A9A60D9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		020FDC6EA0CE63C32A9A60D9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2771A312EF99A9EA920E68E0 /* Pods-UIOpen_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIOpen_Tests.release.xcconfig"; path = "Target Support Files/Pods-UIOpen_Tests/Pods-UIOpen_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* UIOpen_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIOpen_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		80F73AE15C28284910FCAE15 /* Pods_UIOpen_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIOpen_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		878BBC468886CEEF4492D79B /* Pods-UIOpen_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIOpen_Tests.debug.xcconfig"; path = "Target Support Files/Pods-UIOpen_Tests/Pods-UIOpen_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D6D59E17CBFA1D682AAFBB4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		F781BB632ABC2E8C3E548AED /* UIOpen.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = UIOpen.podspec; path = ../UIOpen.podspec; sourceTree = "<group>"; };
+		9D6D59E17CBFA1D682AAFBB4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F781BB632ABC2E8C3E548AED /* UIOpen.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = UIOpen.podspec; path = ../UIOpen.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,6 @@
 				878BBC468886CEEF4492D79B /* Pods-UIOpen_Tests.debug.xcconfig */,
 				2771A312EF99A9EA920E68E0 /* Pods-UIOpen_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,10 +130,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -147,6 +142,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
