@@ -7,14 +7,12 @@
 
 import UIKit
 
-class View: UIView {
+var elementIDKey: String = ""
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+extension UIView {
+    @IBInspectable
+    @objc var elementID: String {
+        get { return objc_getAssociatedObject(self, &elementIDKey) as? String ?? ""}
+        set { objc_setAssociatedObject(self, &elementIDKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN) }
     }
-    */
-
 }
